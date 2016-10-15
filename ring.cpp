@@ -7,7 +7,7 @@
 class Node {
 
 	public:
-		int identifier;
+	    int identifier;
         std::pair<int,int> message;
 
         // maintain a pointer to our neighbour, to avoid infinite recursion issues
