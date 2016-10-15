@@ -4,7 +4,7 @@ import scala.math
 class Node() {
 
     // unique identifier
-	val identifier = scala.util.Random.nextInt(scala.math.pow(2,32).toInt);
+    val identifier = scala.util.Random.nextInt(scala.math.pow(2,32).toInt);
 
     // unique message - note that List is immutable
     var message: List[Int] = List(this.identifier, 0);
@@ -19,21 +19,19 @@ class Node() {
         // why this was chosen.
 
         // if the first element of the message matches our identifier
-        case this.identifier :: _ => {
-			println(message);
-		}
+        case this.identifier :: _ => { println(message); }
 
         // otherwise
         case _ => {
             // function parameter is of type List, and is thus immutable, so we need to create a new copy 
             val new_message: List[Int] = List[Int](message.head, message.last + 1);
-			this.send_message(new_message);
-		}
-	}
+	    this.send_message(new_message);
+        }
+    }
 
     def send_message(message: List[Int]) = {
-		this.neighbour.receive_message(message);
-	}
+        this.neighbour.receive_message(message);
+    }
 }
 
 object Ring {
@@ -49,5 +47,5 @@ object Ring {
         node_list.last.neighbour = node_list.head;
 
         node_list.foreach((n) => {n.send_message(n.message)})
-	}
+    }
 }
