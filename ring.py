@@ -2,7 +2,7 @@ import random
 
 class Node(object):
     def __init__(self, right):
-        self.next_neighbour = next
+        self.next_neighbour = right
         self.identifier = random.randrange(2**32)
         self.message = [self.identifier, 0]
         print("Initialising: " + str(self.message))
