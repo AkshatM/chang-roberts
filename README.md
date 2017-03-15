@@ -1,7 +1,7 @@
 # About 
 
 
-This is an exercise I decided to implement in Scala, Python, Javascript, C++ and other languages as a pedagogical tool. 
+This is an exercise I decided to implement in Scala, Python, Javascript, C++ and other languages for myself. 
 
 It attempts to implement the same exercise across all languages. This helps bring out the strengths and differences of each language overall. One also gets a sense of what is idiomatic in each of these languages.
 
@@ -13,6 +13,8 @@ I conider this a good, moderately more challenging Fizzbuzz-style candidate ques
 
 - It is straightforward to reason about, and the basic logic is easy to perceive. Any code produced does not rely on algorithmic tricks to achieve success.
 - Successfully solving it requires familiarity with several core constructs of the language, such as random number generators, object-oriented programming, and/or whatever functional constructs exist throughout, as well as any idiosyncrasies encountered.
+
+Note that this is also [Chang-Robert's leader election algorithm](https://www.wikiwand.com/en/Leader_election#/Leader_election_in_rings) in miniature, so it is not without use.
 
 # Compilation Information
 
